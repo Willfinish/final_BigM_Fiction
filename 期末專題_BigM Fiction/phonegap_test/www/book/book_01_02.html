@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="../demos/_assets/css/jqm-demos.css">
+<link rel="stylesheet" href="../css/main.css">
+<script src="../demos/js/jquery.js"></script>
+<script src="../demos/js/jquery.mobile-1.4.5.min.js"></script>
+<script>
+	function Submit()
+        {
+		var id01 = 2;
+            $(document).ready(function(){
+                    $.getJSON("http://120.108.111.157/~103021072/json/new_favourite.php?id="+id01,function(result){
+                    });
+            });
+    	}
+</script>
+		<title>網游玄幻之逆天幸運</title>
+	</head>
+	<body>
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="../toolbar/" data-rel="back" data-icon="carat-l" data-iconpos="notext">Back</a>
+			<a href="#" onclick="Submit()" data-icon="heart" data-iconpos="notext"></a>
+					<h1 id="disp">網游玄幻之逆天幸運</h1>
+					
+		</div><!-- /header -->
+		<div role="main" class="ui-content jqm-content jqm-fullwidth">
+			<div data-role="tabs" id="tabs">
+				<ul data-role="listview">
+						<li>作者:黃瓜很好用</li>
+				    	<br/>
+				    	<li>分類:玄幻</li>
+				    	<br/>
+				    	<li>簡介:</li>
+				    	<br/>
+				    	<li>
+				    	<pre>
+　　【飞卢中文网A级签约作品：网游玄幻之逆天幸运】穿越到了一个没有小说的平行世界，叶晓晨表示很兴奋。
+<br/><br/>
+　　正当他准备成为小说鼻祖的时候，，一款名为《武道争霸》的虚拟游戏宣告发行，号称游戏中的实力可以延续到现实，立时引发世界动荡。
+<br/><br/>
+　　叶晓晨更兴奋，这不是为我准备的啊！
+<br/><br/>
+　　正当想要依靠自己熟悉各种套路剧情，牛逼哄哄的时候你，他忽然发现——尼玛，怎么回事，为什么我幸运无限，魅力为零呢？ 
+<br/><br/>
+　　悲剧，一下子都成了NPC公敌。
+<br/><br/>
+　　幸好哥们还有逆天幸运，随便踢一脚，就得到了一部逆天功法，随便杀一个怪，就得到了无敌神器。
+<br/><br/>
+　　当别人还在为低级武器功法秘籍努力的时候，叶晓晨已经只身打入了清国皇宫，摘掉了清帝头上的王冠，带到了自己的头上....发布... (本故事及人物纯属虚构，如有雷同，纯属巧合，切勿模仿。)
+<br/><br/>
+				    	</pre>
+				    	</li>
+				    	<br/>
+				</ul>
+			</div>
+			<br/>
+			<div>
+			<Button href="#" onclick="javascript:window.location.href=('content/book_01_02_content.html');" class="ui-btn ui-shadow ui-corner-all">開始閱讀</Button>
+			</div>
+		</div><!-- /main -->
+		<div data-position="fixed" data-theme="b" data-role="footer" >
+			
+		</div><!-- /footer -->
+	</body>
+</html>

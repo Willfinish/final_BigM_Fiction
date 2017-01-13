@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="demos/_assets/css/jqm-demos.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="demos/js/jquery.js"></script>
+<script src="demos/js/jquery.mobile-1.4.5.min.js"></script>
+<style type="text/css">
+	img {
+    	border-radius: 50%;
+    	border: 3px solid #ddd;
+    	padding: 5px;
+	}
+</style>
+<title>Settings</title>
+</head>
+<body>
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <a href="../toolbar/" data-rel="back" data-icon="carat-l" data-iconpos="notext">Back</a>
+		<a href="#" onclick="javascript:window.location.href=('index.html');" data-icon="action" data-iconpos="notext">Log out</a>
+        <h1>Settings</h1>
+    </div><!-- /header -->
+
+<div role="main" class="ui-content jqm-content jqm-fullwidth">
+ <div>
+	<img src="img/cyb_logo_resized.png" alt="cyb">
+</div>
+<br>
+<div>
+	<ul data-role="listview" class="ui-listview ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+	<!-- <li><img src="img/cyb_logo.png" alt="cyb"></li> -->
+	<div class="ui-tabs ui-widget ui-widget-content ui-corner-all" data-role="tabs" id="disptime"></div>
+	<script type="text/javascript">
+				var user="John";
+				$(document).ready(function(){
+					$.getJSON("http://120.108.111.157/~103021072/json/json_User.php?id="+user,function(result){
+						console.log(result);
+						$.each(result,function(i,field){
+							$("#disptime").append('<li class="ui-li-static ui-body-inherit ui-first-child">帳號:'+field.name+'</li><br/><li class="ui-li-static ui-body-inherit">信箱:'+field.email+'</li><br/><li class="ui-li-static ui-body-inherit ui-last-child">電話:'+field.phone+'</li><br/>');
+						});
+					});
+				});
+	</script>
+	</ul>
+</div>
+
+	
+</div>
+<div data-position="fixed" data-theme="b" data-role="footer" >
+	<div class="ui-grid-b">
+		<div class="ui-block-a"><a onclick="javascript:window.location.href=('home.html');" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-home" style="display: block;">首頁</a></div>
+		<div class="ui-block-b"><a onclick="javascript:window.location.href=('Favourite.html');" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-heart" style="display: block;">收藏</a></div>
+		<div class="ui-block-b"><a onclick="javascript:window.location.href=('Settings.html');" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-gear" style="display: block;">設定</a></div>
+	</div>
+</div>
+</body>
+</html>

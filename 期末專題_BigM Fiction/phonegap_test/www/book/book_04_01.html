@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="../demos/_assets/css/jqm-demos.css">
+<link rel="stylesheet" href="../css/main.css">
+<script src="../demos/js/jquery.js"></script>
+<script src="../demos/js/jquery.mobile-1.4.5.min.js"></script>
+<script>
+	function Submit()
+        {
+		var id01 = 7;
+            $(document).ready(function(){
+                    $.getJSON("http://120.108.111.157/~103021072/json/new_favourite.php?id="+id01,function(result){
+
+                    });
+            });
+    	}
+</script>
+		<title>抗日之老子是狂蟒</title>
+	</head>
+	<body>
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="../toolbar/" data-rel="back" data-icon="carat-l" data-iconpos="notext">Back</a>
+			<a href="#" onclick="Submit()" data-icon="heart" data-iconpos="notext"></a>
+					<h1 id="disp">抗日之老子是狂蟒</h1>
+					
+		</div><!-- /header -->
+		<div role="main" class="ui-content jqm-content jqm-fullwidth">
+			<div data-role="tabs" id="tabs">
+				<ul data-role="listview">
+						<li>作者:招財貓</li>
+				    	<br/>
+				    	<li>分類:歷史</li>
+				    	<br/>
+				    	<li>簡介:</li>
+				    	<br/>
+				    	<li>
+				    	<pre>
+　　【飞卢中文网A级签约作品：抗日之老子是狂蟒】叶尘重生到了一九三七年的上海，竟成了一条无毒的菜花蛇。
+<br/><br/>
+　　不过是条蛇又怎样，老子狂蟒系统在手，升级不断，定要保家卫国，让华夏儿女远离苦难。
+<br/><br/>
+　　上海保卫战老子要赶鬼子下海！杀得小鬼子屁滚尿流，哭爹喊娘！
+<br/><br/>
+　　小日本的破航母老子一下就能卷成一堆废铁！
+<br/><br/>
+　　东京一千万人，还不够老子塞牙缝！
+<br/><br/>
+　　醉卧美人膝，醒掌天下权，老子终有一天会变回人类，成为整个世界的霸主！ (本故事及人物纯属虚构，如有雷同，纯属巧合，切勿模仿。)
+<br/><br/>
+				    	</pre>
+				    	</li>
+				    	<br/>
+				</ul>
+			</div>
+			<br/>
+			<div>
+			<Button href="#" onclick="javascript:window.location.href=('content/book_04_01_content.html');" class="ui-btn ui-shadow ui-corner-all">開始閱讀</Button>
+			</div>
+		</div><!-- /main -->
+		<div data-position="fixed" data-theme="b" data-role="footer" >
+			
+		</div><!-- /footer -->
+	</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="../demos/_assets/css/jqm-demos.css">
+<link rel="stylesheet" href="../css/main.css">
+<script src="../demos/js/jquery.js"></script>
+<script src="../demos/js/jquery.mobile-1.4.5.min.js"></script>
+<script>
+	function Submit()
+        {
+		var id01 = 4;
+            $(document).ready(function(){
+                    $.getJSON("http://120.108.111.157/~103021072/json/new_favourite.php?id="+id01,function(result){
+                    });
+            });
+    	}
+</script>
+		<title>武侠玄幻之天帝傳人</title>
+	</head>
+	<body>
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="../toolbar/" data-rel="back" data-icon="carat-l" data-iconpos="notext">Back</a>
+			<a href="#" onclick="Submit()" data-icon="heart" data-iconpos="notext"></a>
+					<h1 id="disp">武侠玄幻之天帝傳人</h1>
+					
+		</div><!-- /header -->
+		<div role="main" class="ui-content jqm-content jqm-fullwidth">
+			<div data-role="tabs" id="tabs">
+				<ul data-role="listview">
+						<li>作者:雲中君</li>
+				    	<br/>
+				    	<li>分類:仙俠</li>
+				    	<br/>
+				    	<li>簡介:</li>
+				    	<br/>
+				    	<li>
+				    	<pre>
+　　【飞卢中文网A级签约作品：武侠玄幻之天帝传人】穿越重生成移花宫的大师兄，门派里就剩仨人，除了自己还有两师妹，竟然是邀月和怜星！
+<br/><br/>
+　　邀月师妹太强太傲娇，要谋派篡位怎么办？门派里阴盛阳衰，没有男权怎么办？江湖上无数势力对咱师妹虎视眈眈，意图染指怎么办？
+<br/><br/>
+　　幸亏得到一面神奇的古镜，可以沟通诸天万界的顶尖存在。
+<br/><br/>
+　　狠人大帝是我美人师父；叶天帝是我忘年交；荒天帝跟我一起烤过肉；炎帝特聘我替他寻找神火……
+<br/><br/>
+　　吞天魔功、不灭天功、无双斗技、逆天九秘、六道轮回……
+<br/><br/>
+　　看林逸兼修诸天传承，率领风华绝代的师妹们，碾压武侠世界，走向万界巅峰！ 
+<br/><br/>
+　　PS:第一世界是综合武侠世界，金古梁黄，风云、不良人、天下第一等各种影视剧，隋、宋、元、明并立，老手上路，放心收藏。... (本故事及人物纯属虚构，如有雷同，纯属巧合，切勿模仿。)
+<br/><br/>
+				    	</pre>
+				    	</li>
+				    	<br/>
+				</ul>
+			</div>
+			<br/>
+			<div>
+			<Button href="#" onclick="javascript:window.location.href=('content/book_02_02_content.html');" class="ui-btn ui-shadow ui-corner-all">開始閱讀</Button>
+			</div>
+		</div><!-- /main -->
+		<div data-position="fixed" data-theme="b" data-role="footer" >
+			
+		</div><!-- /footer -->
+	</body>
+</html>

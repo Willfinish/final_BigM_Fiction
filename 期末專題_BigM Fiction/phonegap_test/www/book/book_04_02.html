@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="../demos/_assets/css/jqm-demos.css">
+<link rel="stylesheet" href="../css/main.css">
+<script src="../demos/js/jquery.js"></script>
+<script src="../demos/js/jquery.mobile-1.4.5.min.js"></script>
+<script>
+	function Submit()
+        {
+		var id01 = 8;
+            $(document).ready(function(){
+                    $.getJSON("http://120.108.111.157/~103021072/json/new_favourite.php?id="+id01,function(result){
+                    });
+            });
+    	}
+</script>
+		<title>三國之最強皇帝</title>
+	</head>
+	<body>
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="../toolbar/" data-rel="back" data-icon="carat-l" data-iconpos="notext">Back</a>
+			<a href="#" onclick="Submit()" data-icon="heart" data-iconpos="notext"></a>
+					<h1 id="disp">三國之最強皇帝</h1>
+					
+		</div><!-- /header -->
+		<div role="main" class="ui-content jqm-content jqm-fullwidth">
+			<div data-role="tabs" id="tabs">
+				<ul data-role="listview">
+						<li>作者:我是阿四</li>
+				    	<br/>
+				    	<li>分類:歷史</li>
+				    	<br/>
+				    	<li>簡介:</li>
+				    	<br/>
+				    	<li>
+				    	<pre>
+　　【飞卢中文网A级签约作品：三国之最强皇帝】刘哲意外穿越到三国，无意中捡到一名女婴，二十岁的他当上了最溺爱妹妹的哥哥，秉持着女孩要富养的原则，于是刘哲开始了制霸三国的帝王之路...
+<br/><br/>
+　　“我们的口号是：只做生意，不卷入争霸......”
+<br/><br/>
+　　“主公，我们攻下了幽州城！”
+<br/><br/>
+　　“卧槽.....”
+<br/><br/>
+　　“我们的宗旨是：三国所有美女都是我的......”
+<br/><br/>
+　　“主公，貂蝉、大小乔等人已经被我们抢来了！” (本故事及人物纯属虚构，如有雷同，纯属巧合，切勿模仿。)
+<br/><br/>
+				    	</pre>
+				    	</li>
+				    	<br/>
+				</ul>
+			</div>
+			<br/>
+			<div>
+			<Button href="#" onclick="javascript:window.location.href=('content/book_04_02_content.html');" class="ui-btn ui-shadow ui-corner-all">開始閱讀</Button>
+			</div>
+		</div><!-- /main -->
+		<div data-position="fixed" data-theme="b" data-role="footer" >
+			
+		</div><!-- /footer -->
+	</body>
+</html>

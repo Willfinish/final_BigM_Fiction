@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="../demos/_assets/css/jqm-demos.css">
+<link rel="stylesheet" href="../css/main.css">
+<script src="../demos/js/jquery.js"></script>
+<script src="../demos/js/jquery.mobile-1.4.5.min.js"></script>
+<script>
+	function Submit()
+        {
+		var id01 = 5;
+            $(document).ready(function(){
+                    $.getJSON("http://120.108.111.157/~103021072/json/new_favourite.php?id="+id01,function(result){
+
+                    });
+            });
+    	}
+</script>
+		<title>專屬味道:我的檸檬男孩</title>
+	</head>
+	<body>
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="../toolbar/" data-rel="back" data-icon="carat-l" data-iconpos="notext">Back</a>
+			<a href="#" onclick="Submit()" data-icon="heart" data-iconpos="notext"></a>
+					<h1 id="disp">專屬味道:我的檸檬男孩</h1>
+					
+		</div><!-- /header -->
+		<div role="main" class="ui-content jqm-content jqm-fullwidth">
+			<div data-role="tabs" id="tabs">
+				<ul data-role="listview">
+						<li>作者:丸子醬</li>
+				    	<br/>
+				    	<li>分類:校園</li>
+				    	<br/>
+				    	<li>簡介:</li>
+				    	<br/>
+				    	<li>
+				    	<pre>
+　　【飞卢中文网A级签约作品：专属味道：我的柠檬男孩】“苏桃，我想和你从校服到婚纱。”
+<br/><br/>
+　　 “可以，不过我希望每天都能吃到一颗柠檬味的糖。”
+<br/><br/>
+　　 这是果味CP苏桃/左柠。
+<br/><br/>
+　　 “林萧，你的冰冷我会买来一城阳光去融化。”
+<br/><br/>
+　　 “卢韵泽，我没有不爱你，那些伤人的话都是我撒谎。”
+<br/><br/>
+　　 这是深情CP林萧/卢韵泽
+<br/><br/>
+　　 “左柠，我走的再远，遇见再多的人我也无法忘记你。”
+<br/><br/>
+　　 “桃子，做你的骑士我心甘情愿。”
+<br/><br/>
+　　 这是痴心CP张芮/方诺。
+<br/><br/>
+　　《我的柠檬男孩》一部叫做“我爱你”的小说。 (本故事及人物纯属虚构，如有雷同，纯属巧合，切勿模仿。)
+<br/><br/>
+				    	</pre>
+				    	</li>
+				    	<br/>
+				</ul>
+			</div>
+			<br/>
+			<div>
+			<Button href="#" onclick="javascript:window.location.href=('content/book_03_01_content.html');" class="ui-btn ui-shadow ui-corner-all">開始閱讀</Button>
+			</div>
+		</div><!-- /main -->
+		<div data-position="fixed" data-theme="b" data-role="footer" >
+			
+		</div><!-- /footer -->
+	</body>
+</html>

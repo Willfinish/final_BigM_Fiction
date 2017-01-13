@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="demos/_assets/css/jqm-demos.css">
+<script src="demos/js/jquery.js"></script>
+<script src="demos/js/jquery.mobile-1.4.5.min.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="../toolbar/" data-rel="back" data-icon="carat-l" data-iconpos="notext">Back</a>
+					<h1 id="disp"></h1>
+					<script type="text/javascript">
+						function $getURLParameter(name) {return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;}
+						var searchinput = $getURLParameter('book_id');
+						$(document).ready(function(){
+							$.getJSON("http://120.108.111.157/~103021072/ending/json_book.php",function(result){
+								$.each(result,function(i,field){
+									$("#disp").append('field.name');
+								});
+							});
+						});
+					</script>
+		</div><!-- /header -->
+		<div role="main" class="ui-content jqm-content jqm-fullwidth">
+			<div data-role="tabs" id="tabs">
+				<ul data-role="listview">
+				<div id=""></div>
+					<script type="text/javascript">
+						var data="";
+
+						$(document).ready(function(){
+							$.getJSON("http://120.108.111.157/~103021072/ending/json_book_information.php",function(result){
+								var searchinput = $getURLParameter('searchinput');
+								$.each(result,function(i,field2){
+									data=field2.content_Introduction;
+								});
+							});
+						});
+						$(document).ready(function(){
+							$.getJSON("http://120.108.111.157/~103021072/ending/json_book.php",function(result){
+								$.each(result,function(i,field3){
+									$("#disp01").append('<li class="ui-li-static ui-body-inherit ui-first-child">作者:'+field3.author+'</li><br/>'+'<li class="ui-li-static ui-body-inherit">分類:'+field3.type_name+'</li><br/>'+'<li class="ui-li-static ui-body-inherit ui-last-child">簡介</li><br/><pre>'+data+'</pre>');
+								});
+							});
+						});
+					</script>
+				<li id="disp01"></li>
+				</ul>
+			</div>
+			<br/>
+			<div>
+			<Button href="#" onClick="#" class="ui-btn ui-shadow ui-corner-all">開始閱讀</Button>
+			</div>
+		</div><!-- /main -->
+		<div data-position="fixed" data-theme="b" data-role="footer" >
+			123
+		</div><!-- /footer -->
+	</body>
+</html>

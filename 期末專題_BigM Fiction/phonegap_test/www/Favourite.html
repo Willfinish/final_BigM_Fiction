@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="demos/_assets/css/jqm-demos.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="demos/js/jquery.js"></script>
+<script src="demos/js/jquery.mobile-1.4.5.min.js"></script>
+
+<title>Favourite</title>
+</head>
+<body>
+    <div data-role="header" data-position="fixed" data-theme="b">
+		<a href="../toolbar/" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
+		<a href="#" onclick="javascript:window.location.href=('index.html');" data-icon="action" data-iconpos="notext">Log out</a>
+        <h1>Favourite</h1>
+    </div><!-- /header -->
+
+<div role="main" class="ui-content jqm-content jqm-fullwidth">
+	<ul data-role="listview" data-inset="true">
+		<div id="disptime"></div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$.getJSON("http://120.108.111.157/~103021072/json/json_favourite.php",function(result){
+					console.log(result);
+					$.each(result,function(i,field1){
+						$("#disptime").append('<li class="ui-first-child"><a class="ui-btn ui-btn-icon-right ui-icon-carat-r" onclick="javascript:window.location.href=(\''+field1.book_url+'\');">'+field1.name+'</a></li>');
+					});
+				});
+		});
+		</script>
+	</ul>
+</div>
+
+<div data-position="fixed" data-theme="b" data-role="footer" >
+	<div class="ui-grid-b">
+		<div class="ui-block-a"><a onclick="javascript:window.location.href=('home.html');" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-home" style="display: block;">首頁</a></div>
+		<div class="ui-block-b"><a onclick="javascript:window.location.href=('Favourite.html');" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-heart" style="display: block;">收藏</a></div>
+		<div class="ui-block-b"><a onclick="javascript:window.location.href=('Settings.html');" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-gear" style="display: block;">設定</a></div>
+	</div>
+</div>
+</body>
+</html>

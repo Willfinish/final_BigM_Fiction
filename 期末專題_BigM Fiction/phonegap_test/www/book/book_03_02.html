@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="../demos/_assets/css/jqm-demos.css">
+<link rel="stylesheet" href="../css/main.css">
+<script src="../demos/js/jquery.js"></script>
+<script src="../demos/js/jquery.mobile-1.4.5.min.js"></script>
+<script>
+	function Submit()
+        {
+		var id01 = 6;
+            $(document).ready(function(){
+                    $.getJSON("http://120.108.111.157/~103021072/json/new_favourite.php?id="+id01,function(result){
+
+                    });
+            });
+    	}
+</script>
+		<title>你的青春我說了算</title>
+	</head>
+	<body>
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="../toolbar/" data-rel="back" data-icon="carat-l" data-iconpos="notext">Back</a>
+			<a href="#" onclick="Submit()" data-icon="heart" data-iconpos="notext"></a>
+					<h1 id="disp">你的青春我說了算</h1>
+					
+		</div><!-- /header -->
+		<div role="main" class="ui-content jqm-content jqm-fullwidth">
+			<div data-role="tabs" id="tabs">
+				<ul data-role="listview">
+						<li>作者:狐小四</li>
+				    	<br/>
+				    	<li>分類:校園</li>
+				    	<br/>
+				    	<li>簡介:</li>
+				    	<br/>
+				    	<li>
+				    	<pre>
+　　在房间里对着镜子里的自己一番悉心打扮，看着这黝黑的脸庞，加上点点雀斑，鼻子上架个黑框眼镜，两个麻花辫垂在胸前的自己这副尊容。
+<br/><br/>
+　　打开房门准备下楼，老哥正在厨房做饭。
+<br/><br/>
+　　“老哥！跟你商量个事呗？”
+<br/><br/>
+　　“什么....啪！！！！”一回头，一盘刚炒好的青椒肉丝瞬间落地。
+<br/><br/>
+　　“哥，你打翻了我的菜！！我还没吃呢！”我可口的菜，好心疼。
+<br/><br/>
+　　“妹妹，你没事吧？把脸化成这个样子，吓死我了。”原本漂亮的妹妹变成了....难怪接受不了。
+<br/><br/>
+　　“哥，我想以后用这个样子去新学校。”
+<br/><br/>
+　　“不行！！这么丑的妹妹，我可丢不起这人！！！”一脸的嫌弃样。
+<br/><br/>
+　　“哥~我们才从美国回来，又没人认识我们。再说了，我跟妈姓你跟爸姓，我们不说没人会... (本故事及人物纯属虚构，如有雷同，纯属巧合，切勿模仿。)
+<br/><br/>
+				    	</pre>
+				    	</li>
+				    	<br/>
+				</ul>
+			</div>
+			<br/>
+			<div>
+			<Button href="#" onclick="javascript:window.location.href=('content/book_03_02_content.html');" class="ui-btn ui-shadow ui-corner-all">開始閱讀</Button>
+			</div>
+		</div><!-- /main -->
+		<div data-position="fixed" data-theme="b" data-role="footer" >
+			
+		</div><!-- /footer -->
+	</body>
+</html>

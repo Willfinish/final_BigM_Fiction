@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="../demos/_assets/css/jqm-demos.css">
+<link rel="stylesheet" href="../css/main.css">
+<script src="../demos/js/jquery.js"></script>
+<script src="../demos/js/jquery.mobile-1.4.5.min.js"></script>
+<script>
+	function Submit()
+        {
+		var id01 = 3;
+            $(document).ready(function(){
+                    $.getJSON("http://120.108.111.157/~103021072/json/new_favourite.php?id="+id01,function(result){
+                    });
+            });
+    	}
+</script>
+		<title>武侠之氣運掠奪</title>
+	</head>
+	<body>
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="../toolbar/" data-rel="back" data-icon="carat-l" data-iconpos="notext">Back</a>
+			<a href="#" onclick="Submit()" data-icon="heart" data-iconpos="notext"></a>
+					<h1 id="disp">武侠之氣運掠奪</h1>
+					
+		</div><!-- /header -->
+		<div role="main" class="ui-content jqm-content jqm-fullwidth">
+			<div data-role="tabs" id="tabs">
+				<ul data-role="listview">
+						<li>作者:木易公子</li>
+				    	<br/>
+				    	<li>分類:仙俠</li>
+				    	<br/>
+				    	<li>簡介:</li>
+				    	<br/>
+				    	<li><pre>　
+　　【飞卢中文网A级签约作品：武侠之气运掠夺】这是一个主角获得逆天气运系统征战诸天万界聚敛气运的故事！
+<br/><br/>
+　　武道世界我为尊！
+<br/><br/>
+　　诸天万界我称雄！
+<br/><br/>
+　　弹指惊天傲苍穹！
+<br/><br/>
+　　绝世红颜游九霄！
+<br/><br/>
+　　PS：这是一个从武侠世界开始征战诸天万界的故事！这是一个超爽的故事，这是一个有爱的故事！
+　　神功宝典会有的！倾世红颜当然不会少的！铁杆小弟也是必不可少！总之一切都会有的！无限热血！无限爽！
+　　从《笑傲江湖》开始→《倚天》→《射雕&神雕》→《天龙》→《大唐》→《风云》→《仙剑》→《洪荒》……
+　　 (本故事及人物纯属虚构，如有雷同，纯属巧合，切勿模仿。)
+				    	</pre>
+				    	</li>
+				    	<br/>
+				</ul>
+			</div>
+			<br/>
+			<div>
+			<Button href="#" onclick="javascript:window.location.href=('content/book_02_01_content.html');" class="ui-btn ui-shadow ui-corner-all">開始閱讀</Button>
+			</div>
+		</div><!-- /main -->
+		<div data-position="fixed" data-theme="b" data-role="footer" >
+			
+		</div><!-- /footer -->
+	</body>
+</html>

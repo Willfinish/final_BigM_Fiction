@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="../demos/_assets/css/jqm-demos.css">
+<link rel="stylesheet" href="../css/main.css">
+<script src="../demos/js/jquery.js"></script>
+<script src="../demos/js/jquery.mobile-1.4.5.min.js"></script>
+<script>
+	function Submit()
+        {
+		var id01 = 9;
+            $(document).ready(function(){
+                    $.getJSON("http://120.108.111.157/~103021072/json/new_favourite.php?id="+id01,function(result){
+                    });
+            });
+    	}
+</script>
+		<title>海賊王之最強合成系统</title>
+	</head>
+	<body>
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="../toolbar/" data-rel="back" data-icon="carat-l" data-iconpos="notext">Back</a>
+			<a href="#" onclick="Submit()" data-icon="heart" data-iconpos="notext"></a>
+					<h1 id="disp">海賊王之最強合成系统</h1>
+					
+		</div><!-- /header -->
+		<div role="main" class="ui-content jqm-content jqm-fullwidth">
+			<div data-role="tabs" id="tabs">
+				<ul data-role="listview">
+						<li>作者:青罰</li>
+				    	<br/>
+				    	<li>分類:同人</li>
+				    	<br/>
+				    	<li>簡介:</li>
+				    	<br/>
+				    	<li>
+				    	<pre>
+　　【飞卢中文网A级签约作品：海贼王之最强合成系统】《海贼王之最强合成系统》【海贼世界即将迎来最终一战大结局，火影世界即将开启！】
+<br/><br/>
+　　他的身体可以无限容纳恶魔果实！
+<br/><br/>
+　　只要打人就有几率爆恶魔果实碎片，凑够碎片，直接合成恶魔果实！
+<br/><br/>
+　　烧烧果实，震震果实，响雷果实，闪闪果实……一个超级能力者即将诞生！
+<br/><br/>
+　　不仅可以合成恶魔果实，还能合成霸气，合成体力，合成所有变强需要的一切！
+<br/><br/>
+　　“海贼们，颤抖吧！我才不要什么海贼王的称号，我是要成为世界之王的男人！”
+<br/><br/>
+　　一个最强的系统，一个最强的男人！
+<br/><br/>
+　　(本故事及人物纯属虚构，如有雷同，纯属巧合，切勿模仿。)
+<br/><br/>
+				    	</pre>
+				    	</li>
+				    	<br/>
+				</ul>
+			</div>
+			<br/>
+			<div>
+			<Button href="#" onclick="javascript:window.location.href=('content/book_05_01_content.html');" class="ui-btn ui-shadow ui-corner-all">開始閱讀</Button>
+			</div>
+		</div><!-- /main -->
+		<div data-position="fixed" data-theme="b" data-role="footer" >
+			
+		</div><!-- /footer -->
+	</body>
+</html>

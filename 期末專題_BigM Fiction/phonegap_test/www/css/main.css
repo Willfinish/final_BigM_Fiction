@@ -1,0 +1,12 @@
+.button-wrap {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+body{
+	text-align:center;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center top;
+	background-image:url("../img/ice_resized.jpg");
+	opacity:0.8;
+}

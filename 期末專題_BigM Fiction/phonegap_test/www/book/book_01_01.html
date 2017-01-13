@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="../demos/_assets/css/jqm-demos.css">
+<link rel="stylesheet" href="../css/main.css">
+<script src="../demos/js/jquery.js"></script>
+<script src="../demos/js/jquery.mobile-1.4.5.min.js"></script>
+<style>
+div{ 
+word-wrap: break-word; 
+word-break: normal; 
+}
+</style>
+<script>
+	function Submit()
+        {
+		var id01 = 1;
+            $(document).ready(function(){
+                    $.getJSON("http://120.108.111.157/~103021072/json/new_favourite.php?id="+id01,function(result){
+                    });
+            });
+    	}
+</script>
+		<title>洪荒之開闢玄幻世界</title>
+	</head>
+	<body style="word-break: break-all;">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="../toolbar/" data-rel="back" data-icon="carat-l" data-iconpos="notext">Back</a>
+			<a href="#" onclick="Submit()" data-icon="heart" data-iconpos="notext"></a>
+					<h1 id="disp">洪荒之開闢玄幻世界</h1>
+					
+		</div><!-- /header -->
+		<div role="main" class="ui-content jqm-content jqm-fullwidth">
+			<div data-role="tabs" id="tabs">
+				<ul data-role="listview">
+						<li>作者:小污帝</li>
+				    	<br/>
+				    	<li>分類:玄幻</li>
+				    	<br/>
+				    	<li>簡介:</li>
+				    	<br/>
+				    	<li>
+				    	<pre>
+　　三千混沌魔神，创造三千世界，动漫世界，武侠世界，还有洪荒世界。罗修重生混沌成为空间魔神！吞噬时间魔神，凝聚时空之轮，夺天地之造化，创玄幻大世界！培养荒天帝叶天帝炎帝一众无上高手，征战混沌，**一切不服！
+　　<br/><br/>
+　　……
+	<br/><br/>
+　　毁灭魔神：罗修你大爷的。老子的无尽深渊世界，都快被炎帝给烧崩塌了！
+<br/><br/>　
+　　雷电魔神：我认输，求你让十凶中的雷帝回去吧！
+<br/><br/>
+　　盘古：你再让荒天帝破坏我的洪荒世界，我和你不死不休！！！ (本故事及人物纯属虚构，如有雷同，纯属巧合，切勿模仿。)
+<br/><br/>
+				    	</pre>
+				    	</li>
+				    	<br/>
+
+				</ul>
+			</div>
+			<br/>
+			<div>
+			<Button href="#" onclick="javascript:window.location.href=('content/book_01_01_content.html');" class="ui-btn ui-shadow ui-corner-all">開始閱讀</Button>
+			</div>
+		</div><!-- /main -->
+		<div data-position="fixed" data-theme="b" data-role="footer" >
+			
+		</div><!-- /footer -->
+	</body>
+</html>

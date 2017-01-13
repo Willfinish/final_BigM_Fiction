@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="demos/_assets/css/jqm-demos.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="demos/js/jquery.js"></script>
+<script src="demos/js/jquery.mobile-1.4.5.min.js"></script>
+<style type="text/css">
+	img {
+    	border-radius: 50%;
+    	border: 3px solid #ddd;
+    	padding: 5px;
+	}
+</style>
+		<script>
+		function Submit()
+        {
+		var id01 = document.sentToBack.uid.value;
+            $(document).ready(function(){
+                    $.getJSON("http://120.108.111.157/~103021072/json/json_oneuser.php?id="+id01,function(result){
+                        console.log(result[0].name);
+                        var a=result[0].name;
+                        if(a!=null && a==id01){
+                            document.location.href="home.html";
+                        }else{
+                            document.location.href="index.html";
+                        }
+                    });
+                });
+        }
+        </script>        
+
+<title>登入</title>
+</head>
+<body>
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <h1>BigM小說城</h1>
+    </div><!-- /header -->
+<div role="main" class="ui-content jqm-content jqm-fullwidth">
+	<div data-role="tabs" id="tabs">
+		<div>
+			<img src="img/logo.png" alt="bigm">
+		</div>
+		<div>
+		<form name="sentToBack">
+				帳號：<input type="text" name="uid"> <br>
+				密碼：<input type="password" autocomplete="off" name="pw" /> <br>
+				<button type="button" onClick="Submit()" name="button" value="登入">登入</button>
+		</form>
+		</div>
+
+	</div>
+</div>
+
+<div data-position="fixed" data-theme="b" data-role="footer" >
+	<div class="ui-grid-b">
+		<h4>成員:溫浚諺、莊承翰</h4>
+	</div>
+</div>
+</body>
+</html>

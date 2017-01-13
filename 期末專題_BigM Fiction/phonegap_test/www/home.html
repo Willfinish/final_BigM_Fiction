@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="demos/_assets/css/jqm-demos.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="demos/js/jquery.js"></script>
+<script src="demos/js/jquery.mobile-1.4.5.min.js"></script>
+
+<title>BigM小說城</title>
+</head>
+<body>
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <h1>BigM小說城</h1>
+        <a href="../toolbar/" data-rel="back" data-icon="carat-l" data-iconpos="notext">Back</a>
+		<a href="#" onclick="javascript:window.location.href=('index.html');" data-icon="action" data-iconpos="notext">Log out</a>
+        <div>
+        <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search books..." data-inset="true">
+			<!-- <div id="dispsarch"></div> -->
+		
+<!-- 				<script type="text/javascript">
+				$(document).ready(function(){
+					$.getJSON("http://120.108.111.157/~103021072/json/json_book_time.php",function(result){
+						$.each(result,function(i,search_book){
+							$("#dispsarch").append('<li class="ui-first-child"><a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r" style="display: block;" onclick="javascript:window.location.href=(\''+search_book[6]+'\');">'+search_book[1]+'</a></li>');
+						});
+					});
+				});
+				</script> -->
+			
+			    <li><a href="#" onclick="javascript:window.location.href=('book/book_01_01.html');">洪荒之開闢玄幻世界</a></li>
+				<li><a href="#" onclick="javascript:window.location.href=('book/book_01_02.html');">網游玄幻之逆天幸運</a></li>
+				<li><a href="#" onclick="javascript:window.location.href=('book/book_02_01.html');">武侠之氣運掠奪</a></li>
+				<li><a href="#" onclick="javascript:window.location.href=('book/book_02_02.html');">武侠玄幻之天帝傳人</a></li>
+				<li><a href="#" onclick="javascript:window.location.href=('book/book_03_01.html');">專屬味道:我的檸檬男孩</a></li>
+				<li><a href="#" onclick="javascript:window.location.href=('book/book_03_02.html');">你的青春我說了算</a></li>
+				<li><a href="#" onclick="javascript:window.location.href=('book/book_04_01.html');">抗日之老子是狂蟒</a></li>
+				<li><a href="#" onclick="javascript:window.location.href=('book/book_04_02.html');">三國之最強皇帝</a></li>
+				<li><a href="#" onclick="javascript:window.location.href=('book/book_05_01.html');">海賊王之最強合成系统</a></li>
+				<li><a href="#" onclick="javascript:window.location.href=('book/book_05_02.html');">火影之宇智波瞬光</a></li>
+		</ul>
+		</div>
+    </div><!-- /header -->
+<div role="main" class="ui-content jqm-content jqm-fullwidth">
+	<div data-role="tabs" id="tabs">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#one" data-ajax="true">最新</a></li>
+				<li><a href="#two" data-ajax="false">推薦</a></li>
+				<li><a href="#three" data-ajax="false">分類</a></li>
+			</ul>
+		</div>
+		<div id="one" class="ui-body-d ui-content">
+			<ul data-role="listview" data-inset="true">
+			<div id="disptime"></div>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$.getJSON("http://120.108.111.157/~103021072/json/json_book_time.php",function(result){
+						$.each(result,function(i,field1){
+							$("#disptime").append('<li class="ui-first-child"><a class="ui-btn ui-btn-icon-right ui-icon-carat-r" onclick="javascript:window.location.href=(\''+field1[6]+'\');">'+field1[1]+'</a></li>');
+						});
+					});
+				});
+			</script>
+			</ul>
+		</div>
+		<div id="two">
+			<ul data-role="listview" data-inset="true">
+			<div id="dispRandom">
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$.getJSON("http://120.108.111.157/~103021072/json/json_Random_type.php",function(result){
+						$.each(result,function(i,field){
+							$("#dispRandom").append('<li class="ui-first-child"><a class="ui-btn ui-btn-icon-right ui-icon-carat-r" onclick="javascript:window.location.href=(\''+field[6]+'\');">'+field[1]+'</a></li>');
+						});
+					});
+				});
+			</script>
+			</ul>
+		</div>
+		<div id="three">
+			<ul data-role="listview" data-inset="true">
+		        <div data-role="collapsible" data-collapsed="false">
+		        <h4>玄幻</h4>
+			        <ul data-role="listview">
+				        <li><a onclick="javascript:window.location.href=('book/book_01_01.html');">洪荒之開闢玄幻世界</a></li><br/>
+				        <li><a onclick="javascript:window.location.href=('book/book_01_02.html');">網游玄幻之逆天幸運</a></li><br/>
+			        </ul>
+		        </div><br/>
+		        <div data-role="collapsible" data-collapsed="false">
+		        <h4>仙俠</h4>
+			        <ul data-role="listview">
+				        <li><a onclick="javascript:window.location.href=('book/book_02_01.html');">武侠之氣運掠奪</a></li><br/>
+				        <li><a onclick="javascript:window.location.href=('book/book_02_02.html');">武侠玄幻之天帝傳人</a></li><br/>
+			        </ul>
+		        </div><br/>
+		        <div data-role="collapsible" data-collapsed="false">
+		        <h4>校園</h4>
+			        <ul data-role="listview">
+				        <li><a onclick="javascript:window.location.href=('book/book_03_01.html');">專屬味道:我的檸檬男孩</a></li><br/>
+				        <li><a onclick="javascript:window.location.href=('book/book_03_02.html');">你的青春我說了算</a></li><br/>
+			        </ul>
+		        </div><br/>
+		        <div data-role="collapsible" data-collapsed="false">
+		        <h4>歷史</h4>
+			        <ul data-role="listview">
+				        <li><a onclick="javascript:window.location.href=('book/book_04_01.html');">抗日之老子是狂蟒</a></li><br/>
+				        <li><a onclick="javascript:window.location.href=('book/book_04_02.html');">三國之最強皇帝</a></li><br/>
+			        </ul>
+		        </div><br/>
+		        <div data-role="collapsible" data-collapsed="false">
+		        <h4>同人</h4>
+			        <ul data-role="listview">
+				        <li><a onclick="javascript:window.location.href=('book/book_05_01.html');">海賊王之最強合成系统</a></li><br/>
+				        <li><a onclick="javascript:window.location.href=('book/book_05_02.html');">火影之宇智波瞬光</a></li><br/>
+			        </ul>
+		        </div><br/>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div data-position="fixed" data-theme="b" data-role="footer" >
+	<div class="ui-grid-b">
+		<div class="ui-block-a"><a onclick="javascript:window.location.href=('home.html');" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-home" style="display: block;">首頁</a></div>
+		<div class="ui-block-b"><a onclick="javascript:window.location.href=('Favourite.html');" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-heart" style="display: block;">收藏</a></div>
+		<div class="ui-block-c"><a onclick="javascript:window.location.href=('Settings.html');" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-gear" style="display: block;">設定</a></div>
+	</div>
+</div>
+</body>
+</html>
